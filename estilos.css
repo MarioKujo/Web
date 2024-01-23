@@ -142,10 +142,6 @@ figcaption{
   width:25em;
   margin-top:3em;
 }
-#Video{
-  display:flex;
-  justify-content:center;
-}
 @keyframes slide {
   0%, 5%, 100% {
   margin-left: 0;
@@ -169,8 +165,17 @@ figcaption{
   margin-left: -600%;
 }
 }
+#Codigo{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
 .Code{
-  width:100em !important;
+  width:80% !important;
+}
+#Video{
+  display:flex;
+  justify-content:center;
 }
 @media only screen and (min-width: 1101px) {
   header > a {
@@ -185,7 +190,7 @@ figcaption{
   #Options {
     display: flex;
     justify-content: space-between;
-    width: 70vw;
+    width: 100%;
     font-size: 2em;
     text-align: center;
   }
