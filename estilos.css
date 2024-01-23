@@ -142,6 +142,10 @@ figcaption{
   width:25em;
   margin-top:3em;
 }
+#Video{
+  display:flex;
+  justify-content:center;
+}
 @keyframes slide {
   0%, 5%, 100% {
   margin-left: 0;
@@ -259,5 +263,8 @@ figcaption{
     display: block;
     z-index: 2;
     background: black;
+  }
+  .Code{
+    width:50em !important;
   }
 }
