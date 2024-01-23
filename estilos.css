@@ -200,7 +200,7 @@ figcaption{
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width:800px) and (max-width: 1100px) {
   nav {
     z-index: 1;
     position: fixed;
@@ -272,4 +272,101 @@ figcaption{
   .Code{
     width:50em !important;
   }
+}
+@media only screen and (max-width:799px){
+  p{
+    font-size:1em;
+    margin-left:2em;
+    margin-right:2em;
+  }
+  h1{
+    font-size:3em;
+  }
+  h2{
+    font-size:2em;
+  }
+  nav {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 150px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-items: center !important;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: 0.2s;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  width: 100%;
+  justify-content: center;
+  margin: 1em;
+}
+
+#Options li {
+  width: 100%;
+  font-size: 2em;
+}
+
+#Options li a {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#External-links {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+#External-links li a figure {
+  width: 10vw;
+}
+
+#nav_check:checked ~ nav {
+  transform: translateX(0%);
+}
+
+header {
+  z-index: 2;
+}
+
+header > a {
+  width: 13em;
+  z-index: 2;
+  background: black;
+}
+#Imagenes figure, figcaption{
+  width:20% !important;
+  font-size: 0.5em;
+}
+.hamburger {
+  display: block;
+  z-index: 2;
+  background: black;
+}
+#Carrousel{
+  width:100%;
+}
+#Projects figure{
+  width:50%;
+}
+#Video iframe{
+  width:50%;
+  height:auto;
+}
+.Code{
+  width:50% !important;
+}
 }
