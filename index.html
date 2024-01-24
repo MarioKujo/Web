@@ -220,16 +220,55 @@
         <img src="img/Code/Alien/bala2.jpg" alt="Bala2">
         <figcaption>La bala del enemigo 2 se vuelve estática (deja de afectarle la gravedad), si colisiona con el jugador le resta vida, empieza la animación de explosión y le pasa la duración al IEnumerator, el cual espera a que se deje de reproducir la animación para destruir la bala.</figcaption>
       </figure>
+      <figure class="Code">
+        <img src="img/Code/Alien/Bala3-1.jpg" alt="FixedUpdate bala 3">
+        <figcaption>Si la bala se destruye, se queda en el sitio. Tuve que poner esto porque al colisionar con una bala del jugador, salía disparada hacia arriba mientras ejecutaba la animación, cosa que no tendría que pasar.</figcaption>
+      </figure>
+      <figure class="Code">
+        <img src="img/Code/Alien/Bala3-2.jpg" alt="Código bala 3">
+        <figcaption>Si se sale de la pantalla, se destruye sin más. Si toca al jugador una vez, le resta una vida al jugador y empieza la animación de daño del jugador y la de explosión de la bala. La bala al explotar empieza la animación y no desaparece hasta que no ha dejado de ejecutarse la animación de destrucción de la bala.</figcaption>
+      </figure>
       <h2>Super Fruit Slasher</h2>
       <figure>
         <img src="img/Logos/Fruit.jpg" alt="Super Fruit Slasher logo">
       </figure>
-      <p>Al igual que Alien Parapocalypse, era un juego corto hecho en 2 semanas, solo que este no tiene nada destacable de la programación. Los jugadores usan dos katanas para cortar un trozo de fruta en medio de la pantalla, y quien más rápido la corte, gana un punto. El que llegue a 10 puntos gana, pero hay un truco. A veces, lo que aparece en medio para cortar no es una fruta, y si le das al botón, pierdes un punto. Tienes que esperar unos segundos a que se vaya.</p>
+      <p>Alien Parapocalypse y Super Fruit Slasher son dos juegos con aproximadamente 2 semanas de desarrollo, y por eso son tan pequeños. En Super Fruit Slasher tienes que cortar un trozo de fruta presente en medio de la pantalla, y el que más rápido lo corte gana un punto, hasta llegar a 10. Hay veces que lo que aparece no es una fruta y no hay que intentar cortarlo, porque si lo haces, serás penalizado, siendo restado un punto a tu puntuación total. Solo debes esperar a que desaparezca.</p>
+      <figure class="Code">
+        <img src="img/Code/Fruit/J1.jpg" alt="Código jugador 1">
+        <figcaption>En esta imagen se pueden apreciar los controles del jugador 1. Si le da a la tecla A y la fruta todavía no está cortada, cambia su estado de idle a ataque, espera los segundos especificados de la animación y regresa a su posición original. Para el jugador 2 lo único que cambia es que la tecla pulsada es la L, no la A.</figcaption>
+      </figure>
+      <figure class="Code">
+        <img src="img/Code/Fruit/Fruit.jpg" alt="Código fruta">
+        <figcaption>En el array de imágenes, los objetos que no son fruta están del 0 al 5, entonces todo lo que sea más de 5 es fruta. Si la fruta ha sido cortada por cualquiera de los dos jugadores (o simplemente lo que hay ahí no es una fruta), espera los segundos de la animación, asigna los booleanos de las espadas a falso para que puedan volverse a mover y se autodestruye para que el GameController pueda volver a instanciar otra fruta.</figcaption>
+      </figure>
+      <figure class="Code">
+        <img src="img/Code/Fruit/GCUpdate.jpg" alt="FixedUpdate GameController">
+        <figcaption>Este es el FixedUpdate del GameController. Aquí, si no hay ninguna fruta instanciada, lo hace y cmabia el booleano a verdadero para no instanciar varias veces frutas distintas. Actualiza los textos de puntuación de los jugadores, y revisa si alguno de los dos jugadores ha ganado cada vez que se corta una fruta.</figcaption>
+      </figure>
+      <figure class="Code">
+        <img src="img/Code/Fruit/GCWin.jpg" alt="Condición de victoria.">
+        <figcaption>Si alguna de las puntuaciones de los jugadores es 10, se detiene el tiempo, se activa el texto de "Ha ganado el jugador 1!" (o el 2, o es un empate) en el respectivo color (azul para jugador 1, rojo para jugador 2, gris para empate) y se reproduce un sonido.</figcaption>
+      </figure>
+      <figure class="Code">
+        <img src="img/Code/Fruit/FallHalf.jpg" alt="Código para la mitad que cae.">
+        <figcaption>En este código, la mitad que cae revisa si ha colisionado con el jugador 1 o con el jugador 2 y le suma puntuación a quien lo haya hecho. Se activa el trigger para la animación y se reproduce un sonido. Si no es una fruta, dependiendo del jugador que le da, reduce en 1 la puntuación de ese jugador y reduce la velocidad de animación a la que se reproduce la vuelta.</figcaption>
+      </figure>
       <h2>Memory Madness</h2>
       <figure>
         <img src="img/Logos/Memory.png" alt="Logo Memory Madness">
       </figure>
       <p>Un juego de memoria que hice en solitario para una asignatura, haciendo tanto el diseño de las cartas en Adobe Illustrator así como la programación en Unity.</p>
+      <figure class="Code">
+        <img src="img/Code/Memory/Crear.jpg" alt="Código para crear cartas">
+        <figcaption>Se crea un array de cartas de filas*columnas y se instancian automáticamnete en su lugar correspondiente.</figcaption>
+      </figure>
+      <figure class="Code">
+        <img src="img/Code/Memory/Renderer.jpg" alt="Renderer">
+        <figcaption>
+          El primer if sirve para guardar x números aleatorios en un array para agarrar de ahí parejas. Si no está ya en el array, lo añade. Si está en el array, busca otro número hasta que haya uno que no esté presente.
+          Luego, se elige un número aleatorio de ese array y se instancian por parejas. Mientras que no hayan 2 parejas instanciadas de esa pareja y que todas las parejas no hayan sido instanciadas 2 veces, sigue el bucle instanciando carta por carta hasta que estén todas. En el momento en el que todas están presentes, puede comenzar el juego.
+        </figcaption>
+      </figure>
       <h2>Meireki no Hikeshi</h2>
       <figure>
         <img src="img/Logos/Meireki-no-Hikeshi-logo-definitivo (sombreado).png" alt="Logo Meireki">

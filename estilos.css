@@ -347,8 +347,10 @@ header > a {
   z-index: 2;
   background: black;
 }
-#Imagenes figure, figcaption{
+#Imagenes figure{
   width:20% !important;
+}
+#Imagenes figcaption{
   font-size: 0.5em;
 }
 .hamburger {
@@ -367,6 +369,9 @@ header > a {
   height:auto;
 }
 .Code{
-  width:50% !important;
+  width:80% !important;
+}
+#Projects figcaption{
+  font-size:0.9em;
 }
 }
