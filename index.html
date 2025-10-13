@@ -1,462 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <link rel="icon" href="img/Logos/Maku-isotipo-RGB.png" />
-    <title>¡Bienvenidos a mi portfolio!</title>
-    <meta charset="UTF-8" />
-    <script
-      src="https://kit.fontawesome.com/c3fd22b8e3.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
-    <script src="javascript.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Andrés "MaKu" — Portfolio</title>
 
-  <body>
-    <header>
-      <a href="index.html">
-        <figure class="logo">
-          <img src="img/Logos/Maku-logo-Negativo-Transparente.png" alt="logo" />
-        </figure>
-      </a>
-      <input type="checkbox" id="nav_check" hidden />
-      <nav>
-        <ul>
-          <ul id="Options">
-            <li>
-              <a href="#About" class="active">Sobre mí</a>
-            </li>
-            <li>
-              <a href="#Projects" class="inactive">Mis proyectos</a>
-            </li>
-            <li>
-              <a href="#Hobbies" class="inactive">Mis hobbies</a>
-            </li>
-          </ul>
-          <ul id="External-links">
-            <li>
-              <a href="https://github.com/MarioKujo">
-                <figure><img src="img/Socials/GitHub.png" alt="GitHub" /></figure>
-              </a>
-            </li>
-            <li>
-              <a href="https://makumariokujo.itch.io">
-                <figure><img src="img/Socials/itchio.png" alt="Itch.io" /></figure>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/andres-matias-gonzalez-ros/">
-                <figure><img src="img/Socials/LinkedIn.png" alt="LinkedIn" /></figure>
-              </a>
-            </li>
-          </ul>
-        </ul>
-      </nav>
-      <label for="nav_check" class="hamburger">
-        <i class="fa-solid fa-bars"> </i>
-      </label>
-    </header>
-    <section id="About">
-      <h1>Sobre mí</h1>
-      <p>
-        ¡Hola! Soy Andrés Matías González Ros, también conocido como "MaKu".
-        Llevo toda la vida jugando videojuegos (a los 3 años recibí mi primera
-        Nintendo DS). Siempre estuve un poco perdido porque no sabía qué quería
-        hacer para el futuro, hasta que, en 3º de la ESO, nos enseñaron a
-        programar cosas básicas en C++ y me gustó tanto que desde ese momento
-        quería convertirme en programador. Si quería ser programador y me gustan
-        los videojuegos, ¿por qué no combinar las dos cosas?
-      </p>
-      <div id="Imagenes">
-        <figure id="Foto">
-          <img src="img/Me/Día del traje 1.png" alt="Foto de mi cara" />
-          <figcaption>Yo preparado para ir a ESNE el día del traje.</figcaption>
-        </figure>
-      </div>
-      <br>
-      <p>
-        Mi experiencia en el mundo de los videojuegos hasta ahora (enero de
-        2024) ha sido muy variada. He vivido muchas experiencias (trabajos en
-        equipo, conflictos internos, falta de organización, estrés, ...) No me
-        he limitado a aprender programación, ya que en la universidad en la que
-        estudio nos enseñan todo el proceso de creación de videojuegos y todas
-        las herramientas que nos podrán servir para el futuro, como a crear
-        guiones y escenificarlos, dibujar y editar imágenes en Adobe Photoshop, diseñar logotipos en Adobe
-        Illustrator, entre otras cosas.
-      </p>
-      <br />
-      <p>
-        En cuanto a experiencia de mi sector y mi conexión con el mundo real,
-        lamentablemente no he asistido a ninguna Game Jam todavía ya que me he
-        estado centrando en mis estudios. Soy buen programador de C++ y C# y los
-        motores que he aprendido a usar estos años han sido Construct 3, Unity y
-        Unreal Engine 5, el cual estoy en proceso de aprendizaje y programamos
-        con BluePrints. También soy capaz de crear el GDD (Game Design
-        Document), el Ten Pager, el Concept, el Pitch, el Proposal y hacer tanto
-        la página de itch.io del juego como encuestas de satisfacción durante el
-        beta testing, y responder adecuadamente ante semejante feedback. Por
-        último, me gusta diseñar logotipos y editar imágenes en Adobe Photoshop
-        y Adobe Illustrator. A continuación os muestro unos ejemplos de los
-        logos que he hecho yo.
-      </p>
-      <br />
-      <div id="Carrousel">
-        <div>
-          <figure>
-            <img src="img/Logos/Maku-Negativo.jpg" alt="Maku negativo" />
-            <figcaption>Mi marca personal.</figcaption>
-          </figure>
-          <figure>
-            <img src="img/Logos/Alien Parapocalypse.jpg" alt="Alien Parapocalypse" />
-            <figcaption>
-              Para un juego que he desarrollado en equipo (disponible en
-              itch.io).
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="img/Logos/Meireki-no-Hikeshi-logo-definitivo (sombreado).png"
-              alt="Meireki No Hikeshi"
-            />
-            <figcaption>
-              Para el juego anual del segundo curso (disponible en itch.io).
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="img/Logos/Lost-Paradox.jpg" alt="Lost Paradox" />
-            <figcaption>
-              Empresa ficticia con mi grupo de trabajo del tercer curso (Lost
-              Paradox).
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="img/Logos/Mario Kujo pfp.jpg" alt="Mario Kujo pfp" />
-            <figcaption>Mi otro personaje original.</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="img/Logos/Batman-Superman-Logo.jpg"
-              alt="Batman Superman Logo"
-            />
-            <figcaption>Mi versión del logo de Batman vs Superman.</figcaption>
-          </figure>
-          <figure>
-            <img src="img/Logos/Esports logo 3.png" alt="Logo Esports ESNE" />
-            <figcaption>
-              Un logo para un equipo de Esports en el que participé.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <br />
-    </section>
-    <section id="Projects">
-      <h1>Proyectos en los que he participado</h1>
-      <h2>Joaquín</h2>
-      <figure>
-        <img src="img/Logos/Joaquin.png" alt="Logo Joaquin" />
-      </figure>
-      <p>
-        Joaquín es el primer juego que hice. Lo hice con unos compañeros de
-        clase en Construct 3 y fue con el que nos enseñaron a hacer el GDD y el
-        Ten Pager, además de aprender a trabajar en equipo y distribuirnos las
-        tareas equitativamente. No tengo muy buenos recuerdos de este juego, ya
-        que no congeniábamos muy bien algunos miembros del equipo entre
-        nosotros, por no mencionar que hay algunos que no cumplieron sus
-        responsabilidades hasta el día previo a la entrega final.
-      </p>
-      <br>
-      <p>Como mencioné antes, yo hice la función de programador, así que a continuación pondré varias capturas de pantalla de trozos de código que escribí yo:</p>
-      <div id="Codigo">
-      <figure class="Code">
-        <img src="img/Code/Joaquin/Goal.jpg" alt="Contador de plumas y evento de meta">
-        <figcaption>En este fragmento de código, aumenta en 1 el contador de plumas cada vez que colecciona una y, si llega a la meta, transporta al jugador al siguiente nivel. (Reinicia la escena porque, si no, en el siguiente nivel el jugador aparece en un punto más avanzado de lo normal).</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Joaquin/Attacks.jpg" alt="Ataques del jugador">
-        <figcaption>Si el jugador le lanza una bola de fuego o le salta encima a un enemigo, recoge todos los enemigos de la escena y elige el que ha sido dañado por el jugador y le resta 1 de vida. Si tiene 0 de vida o menos, se destruye.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Joaquin/Enemigos.jpg" alt="Código de enemigos">
-        <figcaption>Si el enemigo colisiona con el jugador, le hace daño. <br>Cuando la flecha del enemigo sale de la pantalla, desaparece.<br>Si están en pantalla, los enemigos que se mueven con el modificador de plataforma se activan.<br>Función de knockback cuando el personaje se hace daño con un enemigo.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Joaquin/Jefe.jpg" alt="Jefe">
-        <figcaption>Gestiona las interacciones con el jefe. Cuando te acercas por primera vez, aparece su barra de vida y su nombre, empiezan a aparecer chiles que te puedes comer para lanzar bolas de fuego, él te lanza bolas que tienes que esquivar y tú puedes o lanzarle bolas de fuego si has comido chile o saltar en su cabeza. Cuando se muere, te lleva a los créditos.</figcaption>
-      </figure>
-    </div>
-      <h2>Theo y la Puerta de las Sombras</h2>
-      <figure>
-        <img src="img/Logos/Theo.png" alt="Logo Theo" />
-      </figure>
-      <p>Con este proyecto aprendimos a realizar el concept (un documento en el que escribimos más o menos la idea general que tenemos del juego), el pitch (una presentación del concept con más ideas), el proposal (un documento ya más específico con fecha de salida, competencia del mercado, modelo de negocio,...) El trabajo en equipo fue mejor, pero no el más óptimo, ya que había poca comunicación del equipo (cada uno hace su parte y luego lo juntamos todo). Hay pocas cosas que destacar del código, ya que me repartí el trabajo con otros compañeros y lo poco que programé tampoco es que sea nada del otro mundo. Pero igualmente, voy a compartir mi código:</p>
-      <figure class="Code">
-        <img src="img/Code/Theo/WallJump.jpg" alt="Código WallJump">
-        <figcaption>Revisa si está tocando la pared. Si la está tocando pero no pulsa el botón de salto, se desliza por la pared. Si se está deslizando por la pared o simplemente está tocando la pared y pulsa la tecla W (para saltar), salta de la pared.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/WallJump-2.jpg" alt="Código WallJump">
-        <figcaption>Se gira al hacer el salto.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/PlayerMovement.jpg" alt="Movimiento jugador">
-        <figcaption>Si pulsa la tecla para ir hacia la izquierda, va hacia la izquierda orientado en esa dirección y ejecuta la animación de movimiento. Si pulsa la tecla para moverse hacia la derecha, pasa lo mismo pero mirando hacia la derecha, si no se mueve hace su animación estática. Si le da a la W, salta. Si está mirando hacia la derecha y pulsa la tecla de ir hacia la izquierda, se gira y viceversa.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/PlayerMovement-2.jpg" alt="Movimiento jugador">
-        <figcaption>IsGrounded revisa si está en el suelo o no.<br>Jump ejecuta la animación de salto, le quita todas las fuerzas anteriores y le añade una fuerza de impulso hacia arriba.<br>ClearForces elimina todas las fuerzas que está recibiendo el RigidBody en ese momento.<br>Flip gira 180° el objeto si no está atacando en ese preciso instante. </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/GroundPound1.jpg" alt="Salto Bomba">
-        <figcaption>Si pulsa la tecla S y no está tocando el suelo, empieza a hacer un salto bomba.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/GroundPound2.jpg" alt="Continuación Salto Bomba">
-        <figcaption>
-          GroundPoundAttack simplemente sirve para empezar las otras dos funciones a la vez, para hacer el código más legible.<br>StopMidAir sirve para que el personaje se quede un rato parado en el aire, ya que se desactiva la gravedad.<br>DropAndSmash sirve para esperar el tiempo deseado que se quede en el aire y añadirle una fuerza de impulso hacia abajo.<br>CompleteGroundPound es para que le vuelva a afectar la gravedad.<br>ClearForces sirve para limpiar todas las fuerzas que le afectan en ese momento al rigidbody.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/Camera.jpg" alt="Cámara">
-        <figcaption>Esto fue una idea descartada porque no pude acabarlo a tiempo. La idea era que hubiesen zonas en las que la cámara se congelase en un punto fijo cuando el jugador entrase en contacto con un trigger invisible y empezasen a spawnear enemigos de ambos lados de la pantalla y que no se pudiese mover hasta que no matase a todos los que aparecían, y una vez ha matado a todos, volvía a seguir al jugador como de costumbre, pero la cámara se seguía bloqueando cada vez que el jugador entraba en contacto con el trigger.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/FurbySpawner.jpg" alt="Furby Spawner">
-        <figcaption>Spawner de enemigos. Cada vez que se instancia, tiene que esperar 5 segundos para poder instanciar otro. En el momento en el que se han instanciado 10 furbies, deja de hacerlo.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Theo/WallCreator.jpg" alt="Creador de paredes">
-        <figcaption>Este es otro código descartado, que iba ligado con el de la cámara. Cuando entraba en contacto con el trigger que bloqueaba la cámara, aparecían paredes en los bordes de la cámara para que el jugador no pudiese salirse. Cuando derrotaba a los 10 enemigos, se destruían las paredes.</figcaption>
-      </figure>
-      <h2>Alien Parapocalypse</h2>
-      <figure>
-        <img src="img/Logos/Alien Parapocalypse.jpg" alt="Alien Parapocalypse">
-      </figure>
-      <p>Este juego es en el que más horas he invertido, la verdad. Es un juego arcade interminable en el que tienes que matar al mayor número de alienígenas posible (sin límite de tiempo, sólo estás limitado por la vida del personaje). Aquí sí que voy a meterme mucho en código:</p>
-      <figure class="Code">
-        <img src="img/Code/Alien/GroundAttack.jpg" alt="Ataque de tierra">
-        <figcaption>Un IEnumerator en el que recibe la longitud de la animación de ataque, activa la hitbox de ataque y al acabar la animación la desactiva.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Alien/Trigger.jpg" alt="Eliminar enemigos">
-        <figcaption>Revisa todos los enemigos en escena, ya sean enemigos de tipo 1 (que se mueven por el suelo) o de tipo 2 (aéreos que se mueven a puntos aleatorios del cielo). Si le pega con el ataque de tierra, ese enemigo en específico empieza la animación de muerte.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Alien/bala2.jpg" alt="Bala2">
-        <figcaption>La bala del enemigo 2 se vuelve estática (deja de afectarle la gravedad), si colisiona con el jugador le resta vida, empieza la animación de explosión y le pasa la duración al IEnumerator, el cual espera a que se deje de reproducir la animación para destruir la bala.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Alien/Bala3-1.jpg" alt="FixedUpdate bala 3">
-        <figcaption>Si la bala se destruye, se queda en el sitio. Tuve que poner esto porque al colisionar con una bala del jugador, salía disparada hacia arriba mientras ejecutaba la animación, cosa que no tendría que pasar.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Alien/Bala3-2.jpg" alt="Código bala 3">
-        <figcaption>Si se sale de la pantalla, se destruye sin más. Si toca al jugador una vez, le resta una vida al jugador y empieza la animación de daño del jugador y la de explosión de la bala. La bala al explotar empieza la animación y no desaparece hasta que no ha dejado de ejecutarse la animación de destrucción de la bala.</figcaption>
-      </figure>
-      <h2>Super Fruit Slasher</h2>
-      <figure>
-        <img src="img/Logos/Fruit.jpg" alt="Super Fruit Slasher logo">
-      </figure>
-      <p>Alien Parapocalypse y Super Fruit Slasher son dos juegos con aproximadamente 2 semanas de desarrollo, y por eso son tan pequeños. En Super Fruit Slasher tienes que cortar un trozo de fruta presente en medio de la pantalla, y el que más rápido lo corte gana un punto, hasta llegar a 10. Hay veces que lo que aparece no es una fruta y no hay que intentar cortarlo, porque si lo haces, serás penalizado, siendo restado un punto a tu puntuación total. Solo debes esperar a que desaparezca.</p>
-      <figure class="Code">
-        <img src="img/Code/Fruit/J1.jpg" alt="Código jugador 1">
-        <figcaption>En esta imagen se pueden apreciar los controles del jugador 1. Si le da a la tecla A y la fruta todavía no está cortada, cambia su estado de idle a ataque, espera los segundos especificados de la animación y regresa a su posición original. Para el jugador 2 lo único que cambia es que la tecla pulsada es la L, no la A.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Fruit/Fruit.jpg" alt="Código fruta">
-        <figcaption>En el array de imágenes, los objetos que no son fruta están del 0 al 5, entonces todo lo que sea más de 5 es fruta. Si la fruta ha sido cortada por cualquiera de los dos jugadores (o simplemente lo que hay ahí no es una fruta), espera los segundos de la animación, asigna los booleanos de las espadas a falso para que puedan volverse a mover y se autodestruye para que el GameController pueda volver a instanciar otra fruta.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Fruit/GCUpdate.jpg" alt="FixedUpdate GameController">
-        <figcaption>Este es el FixedUpdate del GameController. Aquí, si no hay ninguna fruta instanciada, lo hace y cambia el booleano a verdadero para no instanciar varias veces frutas distintas. Actualiza los textos de puntuación de los jugadores, y revisa si alguno de los dos jugadores ha ganado cada vez que se corta una fruta.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Fruit/GCWin.jpg" alt="Condición de victoria.">
-        <figcaption>Si alguna de las puntuaciones de los jugadores es 10, se detiene el tiempo, se activa el texto de "Ha ganado el jugador 1!" (o el 2, o es un empate) en el respectivo color (azul para jugador 1, rojo para jugador 2, gris para empate) y se reproduce un sonido.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Fruit/FallHalf.jpg" alt="Código para la mitad que cae.">
-        <figcaption>En este código, la mitad que cae revisa si ha colisionado con el jugador 1 o con el jugador 2 y le suma puntuación a quien lo haya hecho. Se activa el trigger para la animación y se reproduce un sonido. Si no es una fruta, dependiendo del jugador que le da, reduce en 1 la puntuación de ese jugador y reduce la velocidad de animación a la que se reproduce la vuelta.</figcaption>
-      </figure>
-      <h2>Memory Madness</h2>
-      <figure>
-        <img src="img/Logos/Memory.png" alt="Logo Memory Madness">
-      </figure>
-      <p>Un juego de memoria que hice en solitario para una asignatura, haciendo tanto el diseño de las cartas en Adobe Illustrator así como la programación en Unity.</p>
-      <figure class="Code">
-        <img src="img/Code/Memory/Crear.jpg" alt="Código para crear cartas">
-        <figcaption>Se crea un array de cartas de filas*columnas y se instancian automáticamnete en su lugar correspondiente.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Memory/Renderer.jpg" alt="Renderer">
-        <figcaption>
-          El primer if sirve para guardar x números aleatorios en un array para agarrar de ahí parejas. Si no está ya en el array, lo añade. Si está en el array, busca otro número hasta que haya uno que no esté presente.
-          Luego, se elige un número aleatorio de ese array y se instancian por parejas. Mientras que no hayan 2 parejas instanciadas de esa pareja y que todas las parejas no hayan sido instanciadas 2 veces, sigue el bucle instanciando carta por carta hasta que estén todas. En el momento en el que todas están presentes, puede comenzar el juego.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Memory/Animator.jpg">
-        <figcaption>Si hace click en la carta, el tiempo no está pausado y hay menos de 2 cartas volteadas, empieza la animación de volteo de la carta. Si no hay ninguna carta volteada, se mete en la variable card1. Si hay una carta volteada y no hay una segunda carta volteada, se mete en card2. En el IEnumerator, se espera a que se dé la vuelta por completo para resetear el trigger y asignarle el booleano de que está dada la vuelta a verdadero.</figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Memory/GameManager-1.jpg" alt="GameManager primera parte">
-        <figcaption>
-          Si dos cartas están dadas la vuelta, revisa si un contador auxiliar es menor o igual a 0. Si se cumple esta condición, aumenta el número de movimientos y aumenta en uno el contador para ponerlo en 1 y que no vuelva a contar otro punto. Recibe los animadores de las cartas que están dadas la vuelta y la duración de la animación que están reproduciendo en ese instante. Si las cartas son iguales, aumenta la puntuación, el número de cartas dadas la vuelta se vuelve 0 y las cartas almacenadas se vuelven nulas.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Memory/GameManager-2.jpg" alt="GameManager segunda parte">
-        <figcaption>
-          Si ha conseguido 8 puntos (hay 16 cartas en total, eso es fijo), significa que ha ganado. Si ha ganado, el botón de reseteo se desactiva. De las animaciones que recibió antes, si la animación de la carta 1 tarda más que la de la carta 2, se usa ese tiempo. Si no, se usa el otro. El booleano de que hay un proceso inacabado se vuelve verdadero.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Memory/GameManager-3.jpg" alt="GameManager parte 3">
-        <figcaption>
-          Si las dos cartas no son iguales y se ha acabado la animación de darse la vuelta, empieza otra corutina para darles la vuelta otra vez y ponerlas boca abajo.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/Memory/GameManager-4.jpg" alt="GameManager parte 4">
-        <figcaption>
-          Este código sirve para poner las cartas boca abajo si no son iguales mediante una animación.
-        </figcaption>
-      </figure>
-      <h2>Meireki no Hikeshi</h2>
-      <figure>
-        <img src="img/Logos/Meireki-no-Hikeshi-logo-definitivo (sombreado).png" alt="Logo Meireki">
-      </figure>
-      <p>El juego anual que mencioné en la sección anterior. Va sobre un bombero en Japón del siglo 16, yendo de casa en casa apagando incendios. Las mecánicas son muy simples: moverse, saltar, rescatar personas, subir escaleras, recoger agua, soltar agua, variar la velocidad de movimiento y el impulso de salto dependiendo del nivel de agua que tengas actualmente.</p>
-      <figure class="Code">
-        <img src="img/Code/MnH/Menu.jpg" alt="Menú">
-        <figcaption>
-          Menú principal para cargar el nivel, volver y salir.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Pause-1.jpg" alt="Pause-1">
-        <figcaption>
-          Menú de pausa. Empieza con ambos canvas desactivados. Si el número de NPCs rescatados es igual al número total de NPCs, carga directamente la escena de "Nivel Completado". Si pulsa la tecla Escape, activa el canvas de pausa. El canvas de pausa contiene un texto diciendo "Pausa", y tres botones con "Continuar", "Menú Principal" y "Salir".
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Pause-2.jpg" alt="Pause-2">
-        <figcaption>
-          Si pulsa el botón de reanudar, se reanuda el juego. Si pulsa o el botón de Menú Principal o el de Salir, aparece el canvas de "Estás seguro?" con opciones "Sí" y "No".
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Pause-3.jpg" alt="Pause-3">
-        <figcaption>
-          Carga la escena. Si el jugador ha pulsado el botón "Main Menu", le lleva al menú principal. Si por el contrario le da al de "Salir", se cierra la aplicación.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Player-1.jpg" alt="Player-1">
-        <figcaption>
-          Si la velocidad en el eje y es negativa, significa que se está cayendo, entonces reproduce la animación de caída. Si no está tirando agua, se puede mover, saltar y escalar.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Player-2.jpg" alt="Player-2">
-        <figcaption>
-          Si se acaba la animación y el tanque de agua no es igual a cero, resta un nivel al tanque de agua, resetea el trigger y los booleanos respectivos. La función Water() convierte el booleano a verdadero.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Player-3.jpg" alt="Player-3">
-        <figcaption>
-          La función de escalar tira un rayo hacia arriba y si detecta una escalera y el jugador pulsa la tecla "W", empieza a escalar. Sólo puede escalar si el nivel de agua no está en 4. Se anula la gravedad para que pueda escalar.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Water-1.jpg" alt="Water-1">
-        <figcaption>
-          Recarga el agua. <br>Si la capacidad del tanque es menor de 3 y lo que está tocando el jugador es agua, empieza el temporizador. Si el temporizador es mayor o igual que el tiempo que tiene que pasar, aumenta en 1 el nivel de agua. Si pulsa la tecla para lanzar agua, la lanza.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Water-2.jpg" alt="Water-2">
-        <figcaption>
-          Switch para cambiar la velocidad de movimiento, el impulso del salto y la velocidad de las animaciones. ReFuel para recargar agua.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Waterdrop.jpg" alt="Waterdrop">
-        <figcaption>
-          Si el agua cae en el fuego, el fuego se apaga.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/NPC.jpg" alt="NPC">
-        <figcaption>
-          Si el jugador colisiona con el NPC, cambia la animación a "Salvado".
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Water-1.jpg" alt="Water-1">
-        <figcaption>
-          Menú principal para cargar el nivel, volver y salir.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Fire.jpg" alt="Fire">
-        <figcaption>
-          Si el agua toca el fuego, este se vuelve invisible. Al volverse invisible, empieza un temporizador. Al acabar el temporizador, vuelve a ser visible.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Door.jpg" alt="Door">
-        <figcaption>
-          En el hub, si está en frente de la puerta de una casa (la entrada a un nivel), le aparece un sprite de la tecla "W". Si la pulsa entonces, entra en el nivel.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Complete-1.jpg" alt="Complete-1">
-        <figcaption>
-          Cambia el texto que aparece en la escena de "Nivel Completado" y aumenta en uno el número de niveles totales completados (solo suma uno la primera vez que completas un nivel).
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Complete-2.jpg" alt="Complete-2">
-        <figcaption>
-          Si los niveles completados son 3, añade un texto diciendo que el nivel final ya está disponible.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Final.jpg" alt="Final">
-        <figcaption>
-          Tiene el mismo código que la puerta, con la diferencia de que a este sólo se puede acceder cuando has completado ya los 3 niveles anteriores.
-        </figcaption>
-      </figure>
-      <figure class="Code">
-        <img src="img/Code/MnH/Platform.jpg" alt="Platform">
-        <figcaption>
-          Es una mecánica desechada. Si tienes nivel 4 de agua y te pones sobre esta plataforma, se rompe.
-        </figcaption>
-      </figure>
-      <h2>The Nerfir Protocol</h2>
-      <figure>
-        <img src="img/Logos/Nerfir Protocol.png" alt="Logo Nerfir Protocol">
-      </figure>
-      <p>Proyecto en desarrollo por mi equipo de trabajo Lost Paradox, un equipo de 6 personas, los mismos con los que he hecho Alien Parapocalypse, Super Fruit Slasher y Theo y la Puerta de las Sombras. Es un proyecto que estamos haciendo al completo: estudio de mercado previo hasta para el naming, lista de tareas inicial para saber quién hace qué, la creación de una IP única con lore que iremos expandiendo a través de productos transmedia (novelas, juegos de mesa, series y películas, merchandising, ...). El proyecto se está llevando a cabo en Unreal Engine 5.</p>
-    </section>
-    <section id="Hobbies">
-      <h1>Mis hobbies</h1>
-      <h2>Pen Spinning</h2>
-      <p>Pen Spinning es una disciplina en la que, con un bolígrafo modificado para que sea más largo, más pesado y tenga el peso más repartido, giras el bolígrafo alrededor de tus dedos. Llevo 4 años practicando, y aquí está uno de mis vídeos:</p>
-      <div id="Video">
-      <iframe width="1280" height="721" src="https://www.youtube.com/embed/ujIDZUyQSAE" title="「 LSPSC 」×「 PSB 」 2nd MaKu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <h2>Gym</h2>
-    <p>Llevo 1 año entrenando desde casa (tengo una barra, dos mancuernas y suficientes discos como para poder cargar 47kg al mismo tiempo), 1 año en el Holiday Gym al lado de UDIT, y actualmente estoy yendo al Basic-Fit con mi novia. No busco nada específico, sólo ser más saludable y estar más fuerte.</p>
-    <h2>Jugar Videojuegos</h2>
-    <p>Últimamente lo estoy dejando mucho de lado, pero de vez en cuando me gusta viciarme a un juego en específico y jugarlo hasta completarlo al 100% o jugar hasta cansarme. Juego mayormente juegos del género plataforma, de carreras, de deporte, de peleas, cualquier juego competitivo que no sea shooter. A veces, también hago streams en Twitch, <a href="https://www.twitch.tv/maku_mariokujo">link aquí</a>.</p>
-    </section>
-  </body>
+
+<!-- Fuente pixel retro -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+<link rel="icon" href="img/Logos/Maku-isotipo-RGB.png" />
+<link rel="stylesheet" href="estilos.css" />
+<script src="javascript.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<a href="#About" class="logo-link">
+<img src="img/Logos/Maku-logo-Negativo-Transparente.png" alt="MaKu logo" class="logo">
+</a>
+<nav class="main-nav">
+<ul>
+<li><a href="#About" class="nav-link">Sobre mí</a></li>
+<li><a href="#Projects" class="nav-link">Proyectos</a></li>
+<li><a href="#Hobbies" class="nav-link">Hobbies</a></li>
+<li><a href="#Contacto" class="nav-link">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+
+<main>
+<section id="About" class="panel">
+<div class="container">
+<h1 class="title">Andrés “MaKu”</h1>
+<p class="lead">Programador de videojuegos. Especializado en C# (Unity) y C++ (Unreal/Prototipos). Me enfoco en mecánicas jugables, sistemas de enemigos y herramientas internas para equipos de desarrollo.</p>
+<div class="about-grid">
+<figure class="portrait">
+<img src="img/Me/Día del traje 1.png" alt="Foto de Andrés" />
+<figcaption>Andrés en ESNE</figcaption>
+</figure>
+<div class="summary">
+<h2>Resumen técnico</h2>
+<ul class="skills">
+<li>Lenguajes: C#, C++, HTML/CSS/JS</li>
+<li>Motores: Unity, Unreal Engine 5 (Blueprints)</li>
+<li>Herramientas: Git, Photoshop, Illustrator, itch.io</li>
+<li>Áreas: Gameplay systems, AI básica, optimización, herramientas</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="Projects" class="panel">
+<div class="container">
+<h1 class="section-title">Proyectos seleccionados</h1>
+
+
+<!-- Ejemplo de tarjeta de proyecto reducida y profesional -->
+<article class="project">
+<img src="img/Logos/Alien Parapocalypse.jpg" alt="Alien Parapocalypse" class="project-thumb">
+<div class="project-body">
+<h3>Alien Parapocalypse</h3>
+<p class="project-desc">Arcade shooter interminable desarrollado en equipo. Implementé sistemas de ataque, gestión de balas y lógica de enemigos (spawners, colisiones y gestión de animaciones).</p>
+<p class="project-meta"><strong>Tecnologías:</strong> Unity, C#, Animator, Corutinas</p>
+<p class="project-learn">Lo que aporta: rendimiento en escenas con muchos objetos y manejo de animaciones sincronizadas.</p>
+<div class="project-links">
+<a href="https://makumariokujo.itch.io" target="_blank" rel="noopener">Ver en itch.io</a>
+<a href="https://github.com/MarioKujo" target="_blank" rel="noopener">Código (GitHub)</a>
+</div>
+</div>
+</article>
+
+
+<article class="project">
+<img src="img/Logos/Meireki-no-Hikeshi-logo-definitivo (sombreado).png" alt="Meireki no Hikeshi" class="project-thumb">
+<div class="project-body">
+<h3>Meireki no Hikeshi</h3>
+<p class="project-desc">Proyecto anual en el que programé mecánicas de movimiento, recolección de recursos y menús (pausa, carga de escenas y gestión de checkpoints).</p>
+<p class="project-meta"><strong>Tecnologías:</strong> Unity, C#, Scene Management</p>
+<p class="project-learn">Lo que aporta: sistemas de interacción entre objetos y experiencia de usuario en menús.</p>
+</div>
+</article>
+
+
+<article class="project">
+<img src="img/Logos/Memory.png" alt="Memory Madness" class="project-thumb">
+<div class="project-body">
+<h3>Memory Madness</h3>
+<p class="project-desc">Juego de memoria desarrollado en solitario. Programé el generador de cartas, el GameManager y la lógica de animaciones y comparaciones.</p>
+<p class="project-meta"><strong>Tecnologías:</strong> Unity, C#</p>
 </html>
