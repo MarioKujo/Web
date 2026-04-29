@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="icon" href="Images/Maku-isotipo-Negativo.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +15,14 @@
     <header>
       <div id="banner">
         <div id="logo">
-          <a href="#">Foto va aquí</a>
+          <a href="#Projects">
+            <img src="Images/Maku-Negativo.jpg" alt="Logo MaKu" />
+          </a>
         </div>
         <nav id="banner-navbar">
           <ul class="main-nav">
             <li>
-              <a href="#">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li>
               <a href="#">About Me</a>
@@ -30,26 +33,98 @@
           </ul>
           <ul class="social-nav">
             <li>
-              <a href="#">GitHub</a>
+              <a href="https://github.com/MarioKujo">
+                <img
+                  src="Images/Logo Github Blanco.png"
+                  class="banner-images"
+                  alt="GitHub"
+                />
+              </a>
             </li>
             <li>
-              <a href="#">Itch.io</a>
+              <a href="https://makumariokujo.itch.io">
+                <img
+                  src="Images/Logo itch io blanco.png"
+                  class="banner-images"
+                  alt="Itch.io"
+                />
+              </a>
             </li>
             <li>
-              <a href="#">X</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">YouTube</a>
+              <a href="https://www.linkedin.com/in/andres-matias-gonzalez-ros/">
+                <img
+                  src="Images/Logo LinkedIn.png"
+                  class="banner-images"
+                  alt="LinkedIn"
+                />
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section id="Projects"></section>
+      <section id="Projects">
+        <h2>Projects I've worked on</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="Images/Alien Parapocalypse.jpg"
+              class="project-images"
+              alt="Logo Alien Parapocalypse"
+            />
+            <h3>Alien Parapocalypse</h3>
+            <p>
+              A 2D action shooter inspired by Space Invaders, featuring a
+              wheelchair-based protagonist with ranged and melee mechanics.
+              <br />
+              Designed multiple enemy behaviors including path-following aerial
+              units, projectile attackers, kamikaze units, and melee-only ground
+              enemies.
+              <br />
+              Focused on dynamic combat patterns and varied enemy AI behaviors
+              to create layered gameplay encounters.
+            </p>
+          </article>
+          <article class="project-card">
+            <img
+              src="Images/chrome dino.png"
+              class="project-images"
+              alt="Dinosaurio Google Chrome"
+            />
+            <h3>TRex Game</h3>
+            <p>
+              A JavaScript remake of the Chrome offline dinosaur game with
+              custom movement and collision logic.
+              <br />
+              Implemented core gameplay systems including jump physics and
+              obstacle generation.
+              <br />
+              The game includes a custom time-step system, though it behaves
+              inconsistently across different devices due to scaling
+              differences.
+            </p>
+          </article>
+          <article class="project-card">
+            <img
+              src="Images/Memory Madness.png"
+              class="project-images"
+              alt="Ace of Spades/As de picas"
+            />
+            <h3>Memory Madness</h3>
+            <p>
+              A digital memory card game featuring a custom deck and randomized
+              card generation system.
+              <br />
+              Implemented logic to ensure balanced pair generation and
+              restricted player interaction to two active selections at a time.
+              <br />
+              Designed and created a custom visual card set using Adobe
+              Illustrator and Photoshop.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>

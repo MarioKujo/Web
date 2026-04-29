@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +7,20 @@
 
 body {
   font-family: "Poppins";
+  font-size: 1rem;
   text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 header {
@@ -28,6 +40,8 @@ header {
 
 #banner-navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 1.875rem;
 }
 
@@ -44,13 +58,39 @@ header {
   text-decoration: none;
 }
 
-#logo {
+#logo img {
+  height: 100px;
+  width: auto;
+}
+
+.main-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
-#logo a {
-  color: white;
-  text-decoration: none;
+.social-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-images {
+  width: 60px;
+  height: auto;
+}
+
+main {
+  padding-top: 6.25rem;
+}
+
+.project-images {
+  height: 400px;
+  width: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
