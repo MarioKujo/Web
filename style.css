@@ -28,6 +28,7 @@ header {
   height: 6.25rem;
   background-color: black;
   position: fixed;
+  z-index: 1000;
 }
 
 #banner {
@@ -119,6 +120,7 @@ main {
 .project-card p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -127,6 +129,7 @@ main {
 .project-card p.expanded {
   display: block;
   -webkit-line-clamp: unset;
+  line-clamp: unset;
 }
 
 .toggle-btn {
@@ -146,8 +149,139 @@ main {
   color: #000;
 }
 
+#slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slide {
+  width: 100%;
+  height: 500px;
+  object-fit: scale-down;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+  z-index: 10;
+}
+
+.slide-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.slide-btn.prev {
+  left: 1rem;
+}
+.slide-btn.next {
+  right: 1rem;
+}
+
+.slide-dots {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dot.active {
+  background: white;
+}
+
+#hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Animación a X cuando está abierto */
+#hamburger.open span:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+#hamburger.open span:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
+  #hamburger {
+    display: flex;
+  }
+
+  #banner-navbar {
+    display: none;
+    position: fixed;
+    top: 6.25rem;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  #banner-navbar.open {
+    display: flex;
+  }
+
+  #banner-navbar ul {
+    flex-direction: row;
+    align-items: center;
+  }
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -155,6 +289,31 @@ main {
 
 /* Mobile */
 @media (max-width: 768px) {
+  #hamburger {
+    display: flex;
+  }
+
+  #banner-navbar {
+    display: none;
+    position: fixed;
+    top: 6.25rem;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  #banner-navbar.open {
+    display: flex;
+  }
+
+  #banner-navbar ul {
+    flex-direction: row;
+    align-items: center;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
   }
